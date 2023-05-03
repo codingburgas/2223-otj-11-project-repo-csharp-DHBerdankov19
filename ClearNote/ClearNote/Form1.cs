@@ -17,7 +17,7 @@ namespace ClearNote
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=SD2348\SQLEXPRESS;Initial Catalog=ClearNoteDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=SD2341\SQLEXPRESS;Initial Catalog=ClearNoteDB;Integrated Security=True");
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -32,7 +32,7 @@ namespace ClearNote
 
             try
             {
-                String querry = "SELECT * FROM User WHERE Email = '" + text_email.Text + "' AND password = '" + text_password.Text + "'";
+                String querry = "SELECT * FROM User WHERE Email = '" + text_email.Text + "' AND Password = '" + text_password.Text + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
 
                 DataTable dtable = new DataTable();
@@ -40,7 +40,7 @@ namespace ClearNote
 
                 if (dtable.Rows.Count > 0)
                 {
-                    username = text_username.Text;
+                    username = text_email.Text;
                     user_password = text_password.Text;
 
                     Menuform form2 = new Menuform();

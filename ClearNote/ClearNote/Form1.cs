@@ -56,7 +56,7 @@ namespace ClearNote
                     text_email.Focus();
                 }
             }
-            catch
+            catch 
             {
                 MessageBox.Show("Error");
             }

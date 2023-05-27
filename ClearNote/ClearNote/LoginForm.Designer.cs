@@ -1,6 +1,6 @@
 ﻿namespace ClearNote
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -110,6 +110,7 @@
             button_exit.TabIndex = 7;
             button_exit.Text = "Exit";
             button_exit.UseVisualStyleBackColor = true;
+            button_exit.Click += button_exit_Click;
             // 
             // Form1
             // 

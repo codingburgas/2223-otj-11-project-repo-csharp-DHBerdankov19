@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClearNote
 {
-    public partial class Menuform : Form
+    public partial class TasksForm : Form
     {
-        public Menuform()
+        public TasksForm()
         {
             InitializeComponent();
         }

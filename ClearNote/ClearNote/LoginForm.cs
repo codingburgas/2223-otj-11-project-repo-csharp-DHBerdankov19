@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace ClearNote
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace ClearNote
                     username = text_email.Text;
                     user_password = text_password.Text;
 
-                    Menuform form2 = new Menuform();
+                    NotesForm form2 = new NotesForm();
                     form2.Show();
                     this.Hide();
                 }
@@ -56,7 +56,7 @@ namespace ClearNote
                     text_email.Focus();
                 }
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Error");
             }
@@ -72,6 +72,11 @@ namespace ClearNote
             text_password.Clear();
 
             text_email.Focus();
+        }
+
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

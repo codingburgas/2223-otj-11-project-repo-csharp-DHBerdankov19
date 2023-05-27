@@ -10,11 +10,9 @@ CREATE TABLE Category (
 
 CREATE TABLE [User] (
   [Id] int,
-  [FirstName] varchar(50),
-  [LastName] varchar(50),
   [Email] varchar(100),
   [Password] varchar(50),
-  [PhoneNumber] varchar(50),
+  [PhoneNumber] varchar(50) NULL,
   PRIMARY KEY ([Id])
 );
 
@@ -28,7 +26,6 @@ CREATE TABLE Task (
   [UserId] int,
   [Title] varchar(100),
   [DueDate] date,
-  [Status] bit,
   PRIMARY KEY ([Id]),
   CONSTRAINT [FK_Task.UserId]
     FOREIGN KEY ([UserId])
@@ -48,8 +45,6 @@ CREATE TABLE Note (
   [CategoryId] int,
   [NoteLayoutId] int,
   [Title] varchar(100),
-  [DateOfCreation] date,
-  [LastModified] date,
   PRIMARY KEY ([Id]),
   CONSTRAINT [FK_Note.UserId]
     FOREIGN KEY ([UserId])

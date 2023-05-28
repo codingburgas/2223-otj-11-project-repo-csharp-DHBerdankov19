@@ -41,10 +41,10 @@
             // label_welcome
             // 
             label_welcome.AutoSize = true;
-            label_welcome.Font = new Font("Baskerville Old Face", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            label_welcome.Location = new Point(377, 74);
+            label_welcome.Font = new Font("Harlow Solid Italic", 36F, FontStyle.Italic, GraphicsUnit.Point);
+            label_welcome.Location = new Point(376, 72);
             label_welcome.Name = "label_welcome";
-            label_welcome.Size = new Size(212, 54);
+            label_welcome.Size = new Size(207, 61);
             label_welcome.TabIndex = 0;
             label_welcome.Text = "Welcome";
             // 
@@ -52,7 +52,7 @@
             // 
             label_email.AutoSize = true;
             label_email.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label_email.Location = new Point(341, 165);
+            label_email.Location = new Point(336, 160);
             label_email.Name = "label_email";
             label_email.Size = new Size(48, 21);
             label_email.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             label_password.AutoSize = true;
             label_password.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label_password.Location = new Point(340, 211);
+            label_password.Location = new Point(336, 208);
             label_password.Name = "label_password";
             label_password.Size = new Size(76, 21);
             label_password.TabIndex = 2;
@@ -70,52 +70,58 @@
             // 
             // text_email
             // 
-            text_email.Location = new Point(438, 167);
+            text_email.BackColor = Color.LightCyan;
+            text_email.Location = new Point(432, 160);
             text_email.Name = "text_email";
-            text_email.Size = new Size(182, 23);
+            text_email.Size = new Size(184, 23);
             text_email.TabIndex = 3;
             // 
             // text_password
             // 
-            text_password.Location = new Point(438, 211);
+            text_password.BackColor = Color.LightCyan;
+            text_password.Location = new Point(432, 208);
             text_password.Name = "text_password";
-            text_password.Size = new Size(182, 23);
+            text_password.Size = new Size(184, 23);
             text_password.TabIndex = 4;
             // 
             // button_login
             // 
-            button_login.Location = new Point(545, 257);
+            button_login.BackColor = Color.LightSeaGreen;
+            button_login.Location = new Point(544, 256);
             button_login.Name = "button_login";
-            button_login.Size = new Size(75, 25);
+            button_login.Size = new Size(72, 24);
             button_login.TabIndex = 5;
             button_login.Text = "Login";
-            button_login.UseVisualStyleBackColor = true;
+            button_login.UseVisualStyleBackColor = false;
             button_login.Click += button_login_Click;
             // 
             // button_clear
             // 
-            button_clear.Location = new Point(438, 257);
+            button_clear.BackColor = Color.LightSeaGreen;
+            button_clear.Location = new Point(432, 256);
             button_clear.Name = "button_clear";
-            button_clear.Size = new Size(75, 25);
+            button_clear.Size = new Size(72, 24);
             button_clear.TabIndex = 6;
             button_clear.Text = "Clear";
-            button_clear.UseVisualStyleBackColor = true;
+            button_clear.UseVisualStyleBackColor = false;
             button_clear.Click += button_clear_Click;
             // 
             // button_exit
             // 
-            button_exit.Location = new Point(341, 298);
+            button_exit.BackColor = Color.LightSeaGreen;
+            button_exit.Location = new Point(336, 296);
             button_exit.Name = "button_exit";
-            button_exit.Size = new Size(75, 26);
+            button_exit.Size = new Size(72, 24);
             button_exit.TabIndex = 7;
             button_exit.Text = "Exit";
-            button_exit.UseVisualStyleBackColor = true;
+            button_exit.UseVisualStyleBackColor = false;
             button_exit.Click += button_exit_Click;
             // 
-            // Form1
+            // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Azure;
             ClientSize = new Size(923, 520);
             Controls.Add(button_exit);
             Controls.Add(button_clear);
@@ -125,7 +131,7 @@
             Controls.Add(label_password);
             Controls.Add(label_email);
             Controls.Add(label_welcome);
-            Name = "Form1";
+            Name = "LoginForm";
             Text = "Login";
             Load += Form1_Load;
             ResumeLayout(false);
